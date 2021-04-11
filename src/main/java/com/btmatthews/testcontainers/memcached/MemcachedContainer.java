@@ -34,8 +34,12 @@ public class MemcachedContainer extends GenericContainer<MemcachedContainer> {
         setWaitStrategy(new HostPortWaitStrategy());
     }
 
+    public int getMemcachedPort() {
+        return getMappedPort(MEMCACHED_PORT);
+    }
+
     public MemcachedClientIF getClient() throws IOException {
-        final InetSocketAddress address = new InetSocketAddress(InetAddress.getLocalHost(), getMappedPort(MEMCACHED_PORT));
+        final InetSocketAddress address = new InetSocketAddress(getHost(), getMemcachedPort());
         return new MemcachedClient(address);
     }
 }
