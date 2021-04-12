@@ -3,8 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.btmatthews.testcontainers</groupId>
     <artifactId>memcached-testcontainer</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <name>Testcontainer for Memcached</name>
+    <description>Testcontainer module for Memcached</description>
     <inceptionYear>2021</inceptionYear>
     <licenses>
         <license>
