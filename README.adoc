@@ -1,0 +1,46 @@
+= Memcached Module for Testcontainers
+
+== Usage example
+
+This example creates a https://memcached.org/[memcached] client connected to the container, then uses it to add a value to the cache and then retrieve it from the cache.
+
+=== JUnit 4 example
+
+[source,java]
+----
+include::src/test/java/com/btmatthews/testcontainers/memcached/JUnit4Test.java[tag=example]
+----
+
+=== JUnit 5 example
+
+[source,java]
+----
+include::src/test/java/com/btmatthews/testcontainers/memcached/JUnit5Test.java[tag=example]
+----
+
+== Adding project dependency
+
+Adding this module to your project dependencies:
+
+=== Gradle
+
+Add the following dependency to your `build.gradle` file:
+
+[source,groovy]
+----
+testCompile "com.btmatthews.testcontainers:memcached-testcontainer:0.0.1"
+----
+
+=== Maven
+
+Add the following dependency to your `pom.xml` file:
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.btmatthews.testcontainers</groupId>
+    <artifactId>memcached-testcontainer</artifactId>
+    <version>0.0.1</version>
+    <scope>test</scope>
+</dependency>
+----
