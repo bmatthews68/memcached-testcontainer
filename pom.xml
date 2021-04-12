@@ -301,7 +301,7 @@
     <scm>
         <connection>scm:git:git@github.com:bmatthews68/memcached-testcontainer.git</connection>
         <url>https://github.com/bmatthews68/memcached-testcontainer</url>
-        <developerConnection>scm:git@github.com:bmatthews68/memcached-testcontainer.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:bmatthews68/memcached-testcontainer.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
     <url>https://github.com/bmatthews68/memcached-testcontainer</url>
