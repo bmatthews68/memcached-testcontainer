@@ -4,6 +4,7 @@ import net.spy.memcached.MemcachedClientIF;
 import org.junit.jupiter.api.Test;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
+import org.testcontainers.utility.DockerImageName;
 
 import java.io.IOException;
 
@@ -13,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class TestMemcachedContainer {
 
     @Container
-    private static final MemcachedContainer memcachedContainer = new MemcachedContainer();
+    private static final MemcachedContainer memcachedContainer = new MemcachedContainer(DockerImageName.parse("memcached"));
 
     @Test
     void client() throws IOException {
